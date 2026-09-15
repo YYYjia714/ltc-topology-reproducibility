@@ -6,6 +6,11 @@ contains the pre-registered Protocol v2 plan, the SHA-256-locked artifact audit,
 all training histories, the analysis outputs behind every table, and the code
 that produced them. Checkpoints are distributed separately (see §7).
 
+- Repository: https://github.com/YYYjia714/ltc-topology-reproducibility
+  (private during review; made public upon acceptance)
+- Checkpoints: https://zenodo.org/records/22774021
+  (draft during review; published upon acceptance, restricted reviewer link available on request)
+
 ## Contents
 
 ```
@@ -141,8 +146,9 @@ curves, final audit). Mapping to the manuscript:
 ## 7. Checkpoints (separate archive)
 
 All 48 `best.pt` checkpoints (~1.2 GB total) are provided as a separate archive
-`ltc_topology_checkpoints_20260915.zip` (Zenodo/GitHub release), with a SHA-256
-manifest `checkpoints_manifest.json`. Place the unpacked `checkpoints/` folder
+`ltc_topology_checkpoints_20260915.zip` on Zenodo
+(https://zenodo.org/records/22774021), with a SHA-256 manifest
+`checkpoints_manifest.json`. Place the unpacked `checkpoints/` folder
 at the package root before running the post-analysis pipeline. Sizes per file:
 12–48 MB (HisRepItself and ST-Transformer are the largest at 41–48 MB).
 
