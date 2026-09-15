@@ -1,3 +1,8 @@
 checkpoints/
 ltc_topology_checkpoints_20260915.zip
 build_package.py
+gh_token.txt*
+zenodo_token.txt*
+zenodo_meta.json
+zenodo_record_id.txt
+zenodo_upload.sh
