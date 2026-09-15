@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN_LOCKED",
+  "created_utc": "2026-08-22T18:09:41.9072502Z",
+  "formal_training_started": false,
+  "authorization_created": false,
+  "bindings": {
+    "plan": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+      "sha256": "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69"
+    },
+    "inventory": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\reused\\reused_inventory.json",
+      "sha256": "f7a500f9356c385a840d032ae7d23412933c2808640290e57b234f22cb3afee8"
+    },
+    "preflight": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\preflight_final.json",
+      "sha256": "d8d6f1bcff25f0b099c1fe65d97983583390b2193cd35203ba6b1bdd0713be02"
+    },
+    "code_review": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\formal_code_review_pass_20260823.json",
+      "sha256": "550adec55df8d3fe4e32ba50e203a5a30f5a173a72cd82de2454f2aa7ab442fe"
+    },
+    "smoke_report": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\smoke\\20260823_020414\\smoke_report.json",
+      "sha256": "f48fca72e76d4279bf07cb891eb805eb5dbd8325d95560bdb6f342bf6bdfcac3"
+    },
+    "postanalysis_smoke_audit": {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\smoke_analysis_fixture\\20260823_015419\\audit\\reviewer_minimum_audit_pass.json",
+      "sha256": "2282716372692caffad919069d2ff6747affbd424a896d5e8fc57e92f2d1bd37"
+    }
+  },
+  "counts": {
+    "new_training_stages": 33,
+    "reused_seed42_artifacts": 9,
+    "smoke_passed_stages": 33,
+    "formal_completed_stages": 0
+  },
+  "next_required_action": "Explicit user authorization is required before creating formal_start_authorization.json or starting stage 1."
+}

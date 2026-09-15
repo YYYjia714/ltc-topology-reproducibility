@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "dataset": "CMU",
+  "model": "HisRepItself-CMU-clean-retrain-25in25out",
+  "input_n": 25,
+  "output_n": 25,
+  "best_epoch": 30,
+  "best_val_mpjpe": 19.479248060782542,
+  "epochs_completed": 30,
+  "epochs_total": 30,
+  "parameters": 3188048,
+  "elapsed_seconds": 101304.14536499977,
+  "run_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18",
+  "best_checkpoint": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\best.pt",
+  "resume_from": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\last.pt",
+  "resumed_after_epoch": 12,
+  "resume_rng_restored": false
+}

@@ -1,0 +1,14 @@
+{
+  "amass_root": "D:/AMASS_LNN_Project/data/raw/amass",
+  "output_joints": "D:/AMASS_LNN_Project/data/interim/joints",
+  "output_windows": "D:/AMASS_LNN_Project/data/processed/windows",
+  "model_path": "D:/AMASS_LNN_Project/models/smplx",
+  "model_type": "smplx",
+  "num_joints": 25,
+  "batch_size": 256,
+  "history": 25,
+  "future": 25,
+  "stride": 5,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1
+}

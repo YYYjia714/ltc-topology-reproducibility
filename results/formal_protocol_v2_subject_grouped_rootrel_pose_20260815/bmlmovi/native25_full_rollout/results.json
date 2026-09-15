@@ -1,0 +1,130 @@
+{
+  "dataset": "BMLmovi",
+  "model": "ltc_topology",
+  "method_name": "Full LTC-Topology with rollout consistency training",
+  "epochs_total": 30,
+  "best_epoch": 28,
+  "best_epoch_label": "28",
+  "best_at_final_epoch": false,
+  "best_val_mpjpe": 0.3506789308819988,
+  "best_val_mpjpe_1_75": 0.3506789308819988,
+  "parameters": 1813891,
+  "inference_seconds": 0.008815720000420697,
+  "samples_per_second": 113.43372974099435,
+  "optimizer": "adam",
+  "normalized": true,
+  "warm_start": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\native25_no_rollout\\best.pt",
+  "rollout_consistency": {
+    "horizon": 75,
+    "future_step": 25,
+    "lambda_26_50": 0.7,
+    "lambda_51_75": 0.5,
+    "lambda_bone": 0.1,
+    "lambda_root": 0.1,
+    "lambda_velocity": 0.05,
+    "train_windows": 172345,
+    "val_windows": 21290,
+    "batch_size": 128,
+    "num_workers": 0,
+    "pin_memory": false,
+    "guidance_joint_index": 0,
+    "skeleton_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        14,
+        17
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        17,
+        19
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        19,
+        21
+      ],
+      [
+        20,
+        22
+      ],
+      [
+        21,
+        23
+      ],
+      [
+        15,
+        24
+      ]
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "kit",
+    "stage":  "hisrep_common18",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-19T13:30:33.0047315+08:00",
+    "finished_at":  "2026-08-20T07:04:38.0602788+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\kit_hisrep_common18.log"
+}

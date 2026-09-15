@@ -1,0 +1,92 @@
+{
+  "model": "ltc_topology",
+  "history": 25,
+  "future": 25,
+  "joints": 18,
+  "normalized": true,
+  "optimizer": "adam",
+  "use_topology_encoder": true,
+  "use_topology_decoder": true,
+  "use_root_guidance": true,
+  "guidance_joint_index": 2,
+  "skeleton_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      16
+    ],
+    [
+      15,
+      17
+    ]
+  ],
+  "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\kit\\common18\\metadata.json",
+  "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+  "best_epoch": 30,
+  "best_epoch_label": "30*",
+  "best_at_final_epoch": true,
+  "best_val_mpjpe": 0.109880584328242,
+  "test_mpjpe": 0.11321002391530215,
+  "parameters": 1812995,
+  "inference_seconds": 0.011015278000850231,
+  "samples_per_second": 90.78300156589906
+}

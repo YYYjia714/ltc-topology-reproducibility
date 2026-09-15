@@ -1,0 +1,331 @@
+{
+  "status": "completed",
+  "evaluation_protocol": {
+    "split": "test",
+    "stride": 5,
+    "max_windows": 0,
+    "sample_seed": 2026,
+    "history": 25,
+    "rollout_horizon": 75,
+    "coordinate_source": "joints_root_relative",
+    "center_on_first_frame": false,
+    "metric_units": "mm"
+  },
+  "audits": [
+    {
+      "representation": "native25",
+      "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\cmu\\native25\\metadata.json",
+      "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+      "test_windows": 63643,
+      "test_window_records_sha256": "785c93be44b832e65752b3210b006a98ea77559b972f16ec3b65092d6dc69b73",
+      "joint_indices_smplx25": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "guidance_joint_index": 0,
+      "skeleton_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          17,
+          19
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          15,
+          24
+        ]
+      ]
+    },
+    {
+      "representation": "common18",
+      "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\cmu\\common18\\metadata.json",
+      "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+      "test_windows": 63643,
+      "test_window_records_sha256": "785c93be44b832e65752b3210b006a98ea77559b972f16ec3b65092d6dc69b73",
+      "joint_indices_smplx25": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "guidance_joint_index": 2,
+      "skeleton_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          15,
+          17
+        ]
+      ]
+    }
+  ],
+  "checkpoint_sha256": {
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\best.pt": "b4b717943a93da55f4a7c63482dd45958c9d1c59a7336c8cef04a31d25a15b91",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\best.pt": "e389f6c0859c318d79cbbc79863d28d6cbf3beacf9bb3115ef1e8fd7916f6bbc",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\best.pt": "be474d8f8394bcef7646658cabcb06f8d1c98ff0456e99339353bbf9b8227024",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\native25_full_rollout\\best.pt": "dafad5465edd60452fda8ec0e84452e0cd0098bef5b1b1826c4c4d152ac89939",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\native25_no_rollout\\best.pt": "421e1f6fdfe0541f34243b1dc907a169c5520c83f06c8684c9080bc8e41be4cc"
+  },
+  "metrics": [
+    {
+      "dataset": "CMU",
+      "representation": "native25",
+      "model": "LTC-Topology w/o rollout",
+      "test_windows": 63643,
+      "parameters": 1813891,
+      "mpjpe_1_25_mm": 24.946510270017132,
+      "mpjpe_26_50_mm": 63.58812399219058,
+      "mpjpe_51_75_mm": 88.48232134388414,
+      "mpjpe_1_75_mm": 59.00565434348835,
+      "bone_1_75_mm": 8.142959815451901,
+      "bone_51_75_mm": 11.376169904080072,
+      "velocity_1_75_mm": 2.7057838723977303,
+      "velocity_51_75_mm": 2.905410336820259
+    },
+    {
+      "dataset": "CMU",
+      "representation": "native25",
+      "model": "Full LTC-Topology",
+      "test_windows": 63643,
+      "parameters": 1813891,
+      "mpjpe_1_25_mm": 26.052374515857416,
+      "mpjpe_26_50_mm": 63.2756891717685,
+      "mpjpe_51_75_mm": 86.34993261699282,
+      "mpjpe_1_75_mm": 58.55933437212849,
+      "bone_1_75_mm": 8.483312993807624,
+      "bone_51_75_mm": 11.99563938843534,
+      "velocity_1_75_mm": 3.609622563160172,
+      "velocity_51_75_mm": 3.5008003523716775
+    },
+    {
+      "dataset": "CMU",
+      "representation": "common18",
+      "model": "LTC-Topology w/o rollout",
+      "test_windows": 63643,
+      "parameters": 1812995,
+      "mpjpe_1_25_mm": 28.95724540716323,
+      "mpjpe_26_50_mm": 75.12742033661542,
+      "mpjpe_51_75_mm": 105.4608713789004,
+      "mpjpe_1_75_mm": 69.84851080824026,
+      "bone_1_75_mm": 8.191050791877903,
+      "bone_51_75_mm": 11.596980136971856,
+      "velocity_1_75_mm": 3.332253164497542,
+      "velocity_51_75_mm": 3.6016916120201996
+    },
+    {
+      "dataset": "CMU",
+      "representation": "common18",
+      "model": "Full LTC-Topology",
+      "test_windows": 63643,
+      "parameters": 1812995,
+      "mpjpe_1_25_mm": 30.785125437581975,
+      "mpjpe_26_50_mm": 75.75782318951983,
+      "mpjpe_51_75_mm": 105.03412905799252,
+      "mpjpe_1_75_mm": 70.52569078149006,
+      "bone_1_75_mm": 8.284363460411903,
+      "bone_51_75_mm": 11.803535907057201,
+      "velocity_1_75_mm": 4.655522886891549,
+      "velocity_51_75_mm": 4.480722761520552
+    },
+    {
+      "dataset": "CMU",
+      "representation": "common18",
+      "model": "HisRepItself",
+      "test_windows": 63643,
+      "parameters": 3188048,
+      "mpjpe_1_25_mm": 16.030915039155047,
+      "mpjpe_26_50_mm": 54.606066708996096,
+      "mpjpe_51_75_mm": 87.25827342677236,
+      "mpjpe_1_75_mm": 52.63175037285074,
+      "bone_1_75_mm": 7.030523534434956,
+      "bone_51_75_mm": 10.177682398618407,
+      "velocity_1_75_mm": 2.8522213150621285,
+      "velocity_51_75_mm": 3.407959566285211
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "approved": true,
+  "approved_utc": "2026-08-22T19:13:45.2819931Z",
+  "reason": "Recovery authorization rebound after explicit user-requested HisRep CUDA RNG resume fix, deterministic real-checkpoint regression, full epoch-9-to-30 CUDA smoke, and formal recovery code review PASS. Formal resume remains explicit and has not started.",
+  "plan_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+  "plan_sha256": "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69",
+  "review_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\recovery_20260826\\formal_recovery_code_review_pass_20260826.json",
+  "review_sha256": "23cb1acc5a02ac832fc82427c32a11e4b14086e47c97f280fa85c194eee129ec",
+  "inventory_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\reused\\reused_inventory.json",
+  "inventory_sha256": "4fa279f85b93acdbab630ddcaf65714bce4394fa3f3027bc11af8c35076f75e7",
+  "smoke_report_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\recovery_20260826\\recovery_smoke_report_20260826.json",
+  "smoke_report_sha256": "e0cedf12750a804bfa4eff8b8ff737e7c5d98a35ed667b975cd71df5acf5bed8",
+  "preflight_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\preflight_final.json",
+  "preflight_sha256": "d8d6f1bcff25f0b099c1fe65d97983583390b2193cd35203ba6b1bdd0713be02",
+  "recovery_stage_id": "cmu_seed456_hisrep",
+  "recovery_reviewed_utc": "2026-08-25T22:46:07.8339674Z",
+  "explicit_resume_required": true,
+  "formal_resume_started": false,
+  "recovery_validation_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\recovery_20260826\\recovery_ready_validation_20260826.json",
+  "recovery_validation_sha256": "6869f4434497629fb8a10007289131c5467bf7a7fda7df38b177b8bfbab260f3"
+}

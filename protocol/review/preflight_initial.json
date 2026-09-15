@@ -1,0 +1,795 @@
+{
+  "status": "PASS",
+  "formal_ready": true,
+  "created_utc": "2026-08-22T17:40:50.856829+00:00",
+  "plan_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+  "plan_sha256": "5c93ddbeb55549b96167871da50ea61bee9d0530401026302dc5fa7c225c5cc1",
+  "checks": [
+    {
+      "name": "training_stage_count",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "unique_stage_ids",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "strict_dataset_order",
+      "passed": true,
+      "detail": [
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "cmu",
+        "kit",
+        "kit",
+        "kit",
+        "kit",
+        "kit",
+        "kit",
+        "kit",
+        "bmlmovi",
+        "bmlmovi",
+        "bmlmovi",
+        "bmlmovi",
+        "bmlmovi",
+        "bmlmovi",
+        "bmlmovi"
+      ]
+    },
+    {
+      "name": "dependencies_resolve",
+      "passed": true,
+      "detail": "all stage dependencies"
+    },
+    {
+      "name": "legacy_seed42_exact_compatibility_profiles",
+      "passed": true,
+      "detail": {
+        "main_stage_count": 18,
+        "ablation_stage_count": 8
+      }
+    },
+    {
+      "name": "legacy_ablation_compatibility_profiles",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_no_anchor_no_rollout",
+        "cmu_seed42_no_anchor_full_rollout",
+        "cmu_seed42_sensitivity_regularizers_half",
+        "cmu_seed42_sensitivity_regularizers_double",
+        "cmu_seed42_sensitivity_no_velocity",
+        "cmu_seed42_sensitivity_equal_stage_weights",
+        "cmu_seed42_original_ltc_no_rollout",
+        "cmu_seed42_original_ltc_full_rollout"
+      ]
+    },
+    {
+      "name": "representative_cmu_recent_methods",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_msrgcn",
+        "cmu_seed42_st_transformer",
+        "cmu_seed42_simlpe",
+        "cmu_seed42_humanmac"
+      ]
+    },
+    {
+      "name": "controlled_lstm_all_datasets",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_lstm",
+        "kit_seed42_lstm",
+        "bmlmovi_seed42_lstm"
+      ]
+    },
+    {
+      "name": "compact_cmu_sensitivity",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_sensitivity_regularizers_half",
+        "cmu_seed42_sensitivity_regularizers_double",
+        "cmu_seed42_sensitivity_no_velocity",
+        "cmu_seed42_sensitivity_equal_stage_weights"
+      ]
+    },
+    {
+      "name": "representative_cmu_root_ablation",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_no_anchor_no_rollout",
+        "cmu_seed42_no_anchor_full_rollout"
+      ]
+    },
+    {
+      "name": "representative_cmu_topology_2x2",
+      "passed": true,
+      "detail": [
+        "cmu_seed42_original_ltc_no_rollout",
+        "cmu_seed42_original_ltc_full_rollout"
+      ]
+    },
+    {
+      "name": "excluded_out_of_scope_training",
+      "passed": true,
+      "detail": "no additional database and no compute-matched stages"
+    },
+    {
+      "name": "cmu_metadata",
+      "passed": true,
+      "detail": {
+        "path": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\cmu\\common18\\metadata.json",
+        "sha256": "add9c92273d298eeb6a55280b5969ca4256b044b67207417a74dc8793841ff7b"
+      }
+    },
+    {
+      "name": "kit_metadata",
+      "passed": true,
+      "detail": {
+        "path": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\kit\\common18\\metadata.json",
+        "sha256": "b397ac0a1f313f63e6bbdee893a7c0913ae0e80fec453c6db98d09775645ae39"
+      }
+    },
+    {
+      "name": "bmlmovi_metadata",
+      "passed": true,
+      "detail": {
+        "path": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\bmlmovi\\common18\\metadata.json",
+        "sha256": "1a37bbbca02f24575a203870cda07811d3395ad86ac16050f63baa164ad2c8b0"
+      }
+    },
+    {
+      "name": "source_18stage_frozen_settings",
+      "passed": true,
+      "detail": {
+        "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\formal_execution_plan.json",
+        "sha256": "beb38395071e523441aab5baba5eab0036ba8efb680dd9161ae3dfa466cffa10"
+      }
+    },
+    {
+      "name": "reuse_reuse_cmu_seed42_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_cmu_seed42_skeleton_no_rollout",
+        "dataset": "cmu",
+        "role": "skeleton_no_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\best.pt",
+            "size": 21813253,
+            "sha256": "e389f6c0859c318d79cbbc79863d28d6cbf3beacf9bb3115ef1e8fd7916f6bbc"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\results.json",
+            "size": 1370,
+            "sha256": "ece0cf7015a8c0aa1504b1b21360fb6891393790e316426d8962c7787cab238e"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\train_history.json",
+            "size": 3201,
+            "sha256": "f4646b6e13b16a08174c6f17ee92c30087ccec0eb1d8518e7994016ff06dab02"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_cmu_seed42_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_cmu_seed42_skeleton_full_rollout",
+        "dataset": "cmu",
+        "role": "skeleton_full_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\best.pt",
+            "size": 21813445,
+            "sha256": "b4b717943a93da55f4a7c63482dd45958c9d1c59a7336c8cef04a31d25a15b91"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\results.json",
+            "size": 1748,
+            "sha256": "dbce3871e3fa22b9e74bd54b25d7a89241b1f8b1c1159aaa10150fc312470e3e"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\train_history.json",
+            "size": 21381,
+            "sha256": "b76334531bf429120c7371d8000ce7887b99296ef32e1f7779ca01d4a8febd54"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_cmu_seed42_hisrep",
+      "passed": true,
+      "detail": {
+        "id": "reuse_cmu_seed42_hisrep",
+        "dataset": "cmu",
+        "role": "hisrep",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\best.pt",
+            "size": 41216988,
+            "sha256": "be474d8f8394bcef7646658cabcb06f8d1c98ff0456e99339353bbf9b8227024"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\results.json",
+            "size": 791,
+            "sha256": "dee0b39fc39a2545703fbe13984fab6d8f04b9991b2f66b3b8472a07c90df3f4"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\train_history.json",
+            "size": 9077,
+            "sha256": "ef517029f7c0bea446764e2b95186e26cd3e5095dcd90fd10507cf33a73d0ae3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_kit_seed42_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_kit_seed42_skeleton_no_rollout",
+        "dataset": "kit",
+        "role": "skeleton_no_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\best.pt",
+            "size": 21813253,
+            "sha256": "ae8d838ff304ad72f776b8d3b5c759f56d45a2131ecd53b630e89a80f0c8c9d0"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\results.json",
+            "size": 1374,
+            "sha256": "7b109c0c19ec94f6cc3388269949629bfed05849e699ed5ab010e8577336998a"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\train_history.json",
+            "size": 3219,
+            "sha256": "a69aa91cc39734d31635e69852c31abce77be6fa1918c13ea71777afd31a26bc"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_kit_seed42_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_kit_seed42_skeleton_full_rollout",
+        "dataset": "kit",
+        "role": "skeleton_full_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\best.pt",
+            "size": 21813445,
+            "sha256": "1d5b5eedf0003a48f7386d473e73327f21539b14d5419e14551188b950a8ebe8"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\results.json",
+            "size": 1751,
+            "sha256": "07bb664668ef7fa50465fef980832da16e6250e79f7a7c9382173634b08de6a0"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\train_history.json",
+            "size": 21573,
+            "sha256": "f877b992dedeedda050066e3d794bde3a40395d9a50fc5712195cd1bdc35958c"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_kit_seed42_hisrep",
+      "passed": true,
+      "detail": {
+        "id": "reuse_kit_seed42_hisrep",
+        "dataset": "kit",
+        "role": "hisrep",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\best.pt",
+            "size": 41215516,
+            "sha256": "42d6a4b183676aa3776ea26a133fe8e21738c87ae5253ada902f7b16199c135d"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\results.json",
+            "size": 675,
+            "sha256": "bc51e766697aef52e1367ba83a0013b99e1467717863165c856dfd5e73aedb04"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\train_history.json",
+            "size": 8975,
+            "sha256": "0f7880d03049bfa77aabb1c182ba47cfbbb456699b567e1043fccf4d3a2ee649"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_bmlmovi_seed42_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_bmlmovi_seed42_skeleton_no_rollout",
+        "dataset": "bmlmovi",
+        "role": "skeleton_no_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\best.pt",
+            "size": 21813253,
+            "sha256": "852310fa43e04669e624e91f04d82f90813fe832fff038f002ade236d901f99b"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\results.json",
+            "size": 1375,
+            "sha256": "2e3f0458f9b373ca7e944b475aa5510f07f3bb4ed3ab6bc0e7549321766d0497"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\train_history.json",
+            "size": 3221,
+            "sha256": "e1fb04f4c0288adee39009b36b360de1defebb758704f79d690250e3caa0f1aa"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_bmlmovi_seed42_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "id": "reuse_bmlmovi_seed42_skeleton_full_rollout",
+        "dataset": "bmlmovi",
+        "role": "skeleton_full_rollout",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\best.pt",
+            "size": 21813445,
+            "sha256": "c5c915195e3bfcec919595bb69acd7cab3165225af98aace1cdbd243109744d2"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\results.json",
+            "size": 1758,
+            "sha256": "3eba359d92d4995459019c73eb458804431de742e47f96c88ef9373349f08f9c"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\train_history.json",
+            "size": 21502,
+            "sha256": "3a0b1a1d76d2403d0adcc09a29f11a5b4f9defd95e89d70412f618f5cc0860b3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reuse_reuse_bmlmovi_seed42_hisrep",
+      "passed": true,
+      "detail": {
+        "id": "reuse_bmlmovi_seed42_hisrep",
+        "dataset": "bmlmovi",
+        "role": "hisrep",
+        "passed": true,
+        "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+        "dataset_audit_status": "PASS",
+        "artifacts": [
+          {
+            "name": "best.pt",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\best.pt",
+            "size": 41215516,
+            "sha256": "e5623bf673380e04fbadbb90cafdd6e7e4f958fc624f1f28789bd343dbbb6107"
+          },
+          {
+            "name": "results.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\results.json",
+            "size": 691,
+            "sha256": "6a7883cb61267361e4fa9b6f81f36699a888cd837f1d4a09ccca4eb5e48ab8eb"
+          },
+          {
+            "name": "train_history.json",
+            "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\train_history.json",
+            "size": 9043,
+            "sha256": "4afb00df4334c4e99200d1c1e8a036beec07167d2199df89c698766a86c0747a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "source_hashes_frozen",
+      "passed": true,
+      "detail": {
+        "E:\\AMASS_LNN_Project\\build_reviewer_minimum33_plan_20260823.py": {
+          "expected": "46f1534fa109833a01b156acfa6b5f3b28b1f446531556d241effcc3a9295cbc",
+          "actual": "46f1534fa109833a01b156acfa6b5f3b28b1f446531556d241effcc3a9295cbc"
+        },
+        "E:\\AMASS_LNN_Project\\src\\models.py": {
+          "expected": "14fe38a78f1cf15795d623c3ea5fc388a9565463f08d6036267cbd17f81e7abe",
+          "actual": "14fe38a78f1cf15795d623c3ea5fc388a9565463f08d6036267cbd17f81e7abe"
+        },
+        "E:\\AMASS_LNN_Project\\src\\reviewer_baselines.py": {
+          "expected": "ea748e996e7e196ea1216fbfe776c66c683de616e2cbf12d79250c7e1677ff11",
+          "actual": "ea748e996e7e196ea1216fbfe776c66c683de616e2cbf12d79250c7e1677ff11"
+        },
+        "E:\\AMASS_LNN_Project\\train.py": {
+          "expected": "1dbd38a8cba5f124ff8e94dc42055f4c56510f41f4b1e98b7d7241a81ccd97e0",
+          "actual": "1dbd38a8cba5f124ff8e94dc42055f4c56510f41f4b1e98b7d7241a81ccd97e0"
+        },
+        "E:\\AMASS_LNN_Project\\train_ltc_topology_rollout_consistency.py": {
+          "expected": "10cfcde1174e94a462a33e7a17ff9f17be970bede79542d23b3c358d5e7eae84",
+          "actual": "10cfcde1174e94a462a33e7a17ff9f17be970bede79542d23b3c358d5e7eae84"
+        },
+        "E:\\AMASS_LNN_Project\\train_protocol_v2_revision_20260821.py": {
+          "expected": "9cfe73565206a62391085816031b82d731fd34180a1d9bc0b496cc752266322a",
+          "actual": "9cfe73565206a62391085816031b82d731fd34180a1d9bc0b496cc752266322a"
+        },
+        "E:\\AMASS_LNN_Project\\train_protocol_v2_revision_hisrep_20260821.py": {
+          "expected": "01eb0cac15c0c25c6d0602bf0414712accd705a88437f28e8f92c329c6a71758",
+          "actual": "01eb0cac15c0c25c6d0602bf0414712accd705a88437f28e8f92c329c6a71758"
+        },
+        "E:\\AMASS_LNN_Project\\train_hisrep_cmu_clean.py": {
+          "expected": "9868a90a37cf7e2e3c09c4ab6d3cb2fec7ddbe0566a9a7b54592e588c9a9496a",
+          "actual": "9868a90a37cf7e2e3c09c4ab6d3cb2fec7ddbe0566a9a7b54592e588c9a9496a"
+        },
+        "E:\\AMASS_LNN_Project\\train_protocol_v2_reviewer_baseline_20260822.py": {
+          "expected": "18dc3f7c598240b29f04d738861ca675a55be8b5e6bcccf802168756d3b941f5",
+          "actual": "18dc3f7c598240b29f04d738861ca675a55be8b5e6bcccf802168756d3b941f5"
+        },
+        "E:\\AMASS_LNN_Project\\train_reviewer_ltc_legacy_compatible_20260822.py": {
+          "expected": "4ae0b673f0d2c3fdea8d6cd0a103c89b446c91d84c25fa9ac1424d96fbcbd652",
+          "actual": "4ae0b673f0d2c3fdea8d6cd0a103c89b446c91d84c25fa9ac1424d96fbcbd652"
+        },
+        "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_stage_20260823.ps1": {
+          "expected": "bdeb1d23c035f87218b92964f4db1c30bf7e1477b12ad200a03bbb90f86d5090",
+          "actual": "bdeb1d23c035f87218b92964f4db1c30bf7e1477b12ad200a03bbb90f86d5090"
+        },
+        "E:\\AMASS_LNN_Project\\manage_reviewer_minimum33_queue_20260823.ps1": {
+          "expected": "b7939709a0f3230fa2a339064a11be545394427559273c5316c2ef1ff7fb1071",
+          "actual": "b7939709a0f3230fa2a339064a11be545394427559273c5316c2ef1ff7fb1071"
+        },
+        "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_smoke_20260823.ps1": {
+          "expected": "f439fc7caea32642b3bb0217f45b13cf73620260e4a994868963b7bb1dcdbf7a",
+          "actual": "f439fc7caea32642b3bb0217f45b13cf73620260e4a994868963b7bb1dcdbf7a"
+        },
+        "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_postanalysis_20260823.ps1": {
+          "expected": "291be31b7762b235ac6a621fa36d5c929cde4823c038079af39db51e8a68f28c",
+          "actual": "291be31b7762b235ac6a621fa36d5c929cde4823c038079af39db51e8a68f28c"
+        },
+        "E:\\AMASS_LNN_Project\\audit_reviewer_minimum33_preflight_20260823.py": {
+          "expected": "a5b99dba7836947816e9fe0c29347656ea23d51665b03dceb9f1642959ce00db",
+          "actual": "a5b99dba7836947816e9fe0c29347656ea23d51665b03dceb9f1642959ce00db"
+        },
+        "E:\\AMASS_LNN_Project\\materialize_reviewer_reuse_20260822.py": {
+          "expected": "206821d9954bd993f3e6ddbf1556eb0480ed5076da0552174365a2840fc5e284",
+          "actual": "206821d9954bd993f3e6ddbf1556eb0480ed5076da0552174365a2840fc5e284"
+        },
+        "E:\\AMASS_LNN_Project\\scripts\\evaluate_reviewer_minimum33_20260823.py": {
+          "expected": "950d0cbbbf036c9e10fd091cefe8e7399b49589f0090a4f5e09520770e1e6e45",
+          "actual": "950d0cbbbf036c9e10fd091cefe8e7399b49589f0090a4f5e09520770e1e6e45"
+        },
+        "E:\\AMASS_LNN_Project\\scripts\\benchmark_reviewer_minimum33_efficiency_20260823.py": {
+          "expected": "cf50600593892d29b9de655d47a64cfc6332273d6de5a8aee135659240820635",
+          "actual": "cf50600593892d29b9de655d47a64cfc6332273d6de5a8aee135659240820635"
+        },
+        "E:\\AMASS_LNN_Project\\scripts\\plot_reviewer_minimum33_curves_20260823.py": {
+          "expected": "3db3ca2843dbda3761579fa86d617728a7a750014902c104b80c2f766c26a542",
+          "actual": "3db3ca2843dbda3761579fa86d617728a7a750014902c104b80c2f766c26a542"
+        },
+        "E:\\AMASS_LNN_Project\\scripts\\audit_reviewer_minimum33_20260823.py": {
+          "expected": "8203d415de9b880d98f6060e324f29dffa647c803ee5b8799a9b1b8ef076053f",
+          "actual": "8203d415de9b880d98f6060e324f29dffa647c803ee5b8799a9b1b8ef076053f"
+        }
+      }
+    }
+  ],
+  "reused_artifact_inventory": [
+    {
+      "id": "reuse_cmu_seed42_skeleton_no_rollout",
+      "dataset": "cmu",
+      "role": "skeleton_no_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\best.pt",
+          "size": 21813253,
+          "sha256": "e389f6c0859c318d79cbbc79863d28d6cbf3beacf9bb3115ef1e8fd7916f6bbc"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\results.json",
+          "size": 1370,
+          "sha256": "ece0cf7015a8c0aa1504b1b21360fb6891393790e316426d8962c7787cab238e"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout\\train_history.json",
+          "size": 3201,
+          "sha256": "f4646b6e13b16a08174c6f17ee92c30087ccec0eb1d8518e7994016ff06dab02"
+        }
+      ]
+    },
+    {
+      "id": "reuse_cmu_seed42_skeleton_full_rollout",
+      "dataset": "cmu",
+      "role": "skeleton_full_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\best.pt",
+          "size": 21813445,
+          "sha256": "b4b717943a93da55f4a7c63482dd45958c9d1c59a7336c8cef04a31d25a15b91"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\results.json",
+          "size": 1748,
+          "sha256": "dbce3871e3fa22b9e74bd54b25d7a89241b1f8b1c1159aaa10150fc312470e3e"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout\\train_history.json",
+          "size": 21381,
+          "sha256": "b76334531bf429120c7371d8000ce7887b99296ef32e1f7779ca01d4a8febd54"
+        }
+      ]
+    },
+    {
+      "id": "reuse_cmu_seed42_hisrep",
+      "dataset": "cmu",
+      "role": "hisrep",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\best.pt",
+          "size": 41216988,
+          "sha256": "be474d8f8394bcef7646658cabcb06f8d1c98ff0456e99339353bbf9b8227024"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\results.json",
+          "size": 791,
+          "sha256": "dee0b39fc39a2545703fbe13984fab6d8f04b9991b2f66b3b8472a07c90df3f4"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18\\train_history.json",
+          "size": 9077,
+          "sha256": "ef517029f7c0bea446764e2b95186e26cd3e5095dcd90fd10507cf33a73d0ae3"
+        }
+      ]
+    },
+    {
+      "id": "reuse_kit_seed42_skeleton_no_rollout",
+      "dataset": "kit",
+      "role": "skeleton_no_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\best.pt",
+          "size": 21813253,
+          "sha256": "ae8d838ff304ad72f776b8d3b5c759f56d45a2131ecd53b630e89a80f0c8c9d0"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\results.json",
+          "size": 1374,
+          "sha256": "7b109c0c19ec94f6cc3388269949629bfed05849e699ed5ab010e8577336998a"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout\\train_history.json",
+          "size": 3219,
+          "sha256": "a69aa91cc39734d31635e69852c31abce77be6fa1918c13ea71777afd31a26bc"
+        }
+      ]
+    },
+    {
+      "id": "reuse_kit_seed42_skeleton_full_rollout",
+      "dataset": "kit",
+      "role": "skeleton_full_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\best.pt",
+          "size": 21813445,
+          "sha256": "1d5b5eedf0003a48f7386d473e73327f21539b14d5419e14551188b950a8ebe8"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\results.json",
+          "size": 1751,
+          "sha256": "07bb664668ef7fa50465fef980832da16e6250e79f7a7c9382173634b08de6a0"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout\\train_history.json",
+          "size": 21573,
+          "sha256": "f877b992dedeedda050066e3d794bde3a40395d9a50fc5712195cd1bdc35958c"
+        }
+      ]
+    },
+    {
+      "id": "reuse_kit_seed42_hisrep",
+      "dataset": "kit",
+      "role": "hisrep",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\best.pt",
+          "size": 41215516,
+          "sha256": "42d6a4b183676aa3776ea26a133fe8e21738c87ae5253ada902f7b16199c135d"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\results.json",
+          "size": 675,
+          "sha256": "bc51e766697aef52e1367ba83a0013b99e1467717863165c856dfd5e73aedb04"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\train_history.json",
+          "size": 8975,
+          "sha256": "0f7880d03049bfa77aabb1c182ba47cfbbb456699b567e1043fccf4d3a2ee649"
+        }
+      ]
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_skeleton_no_rollout",
+      "dataset": "bmlmovi",
+      "role": "skeleton_no_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\best.pt",
+          "size": 21813253,
+          "sha256": "852310fa43e04669e624e91f04d82f90813fe832fff038f002ade236d901f99b"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\results.json",
+          "size": 1375,
+          "sha256": "2e3f0458f9b373ca7e944b475aa5510f07f3bb4ed3ab6bc0e7549321766d0497"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\train_history.json",
+          "size": 3221,
+          "sha256": "e1fb04f4c0288adee39009b36b360de1defebb758704f79d690250e3caa0f1aa"
+        }
+      ]
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_skeleton_full_rollout",
+      "dataset": "bmlmovi",
+      "role": "skeleton_full_rollout",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\best.pt",
+          "size": 21813445,
+          "sha256": "c5c915195e3bfcec919595bb69acd7cab3165225af98aace1cdbd243109744d2"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\results.json",
+          "size": 1758,
+          "sha256": "3eba359d92d4995459019c73eb458804431de742e47f96c88ef9373349f08f9c"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\train_history.json",
+          "size": 21502,
+          "sha256": "3a0b1a1d76d2403d0adcc09a29f11a5b4f9defd95e89d70412f618f5cc0860b3"
+        }
+      ]
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_hisrep",
+      "dataset": "bmlmovi",
+      "role": "hisrep",
+      "passed": true,
+      "dataset_audit": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\dataset_audit_pass.json",
+      "dataset_audit_status": "PASS",
+      "artifacts": [
+        {
+          "name": "best.pt",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\best.pt",
+          "size": 41215516,
+          "sha256": "e5623bf673380e04fbadbb90cafdd6e7e4f958fc624f1f28789bd343dbbb6107"
+        },
+        {
+          "name": "results.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\results.json",
+          "size": 691,
+          "sha256": "6a7883cb61267361e4fa9b6f81f36699a888cd837f1d4a09ccca4eb5e48ab8eb"
+        },
+        {
+          "name": "train_history.json",
+          "path": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\train_history.json",
+          "size": 9043,
+          "sha256": "4afb00df4334c4e99200d1c1e8a036beec07167d2199df89c698766a86c0747a"
+        }
+      ]
+    }
+  ]
+}

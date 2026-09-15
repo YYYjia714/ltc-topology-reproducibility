@@ -1,0 +1,120 @@
+{
+  "model": "ltc_topology",
+  "history": 25,
+  "future": 25,
+  "joints": 25,
+  "normalized": true,
+  "optimizer": "adam",
+  "use_topology_encoder": true,
+  "use_topology_decoder": true,
+  "use_root_guidance": true,
+  "guidance_joint_index": 0,
+  "skeleton_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      14,
+      17
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      17,
+      19
+    ],
+    [
+      18,
+      20
+    ],
+    [
+      19,
+      21
+    ],
+    [
+      20,
+      22
+    ],
+    [
+      21,
+      23
+    ],
+    [
+      15,
+      24
+    ]
+  ],
+  "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\bmlmovi\\native25\\metadata.json",
+  "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+  "best_epoch": 29,
+  "best_epoch_label": "29",
+  "best_at_final_epoch": false,
+  "best_val_mpjpe": 0.13051823131613813,
+  "test_mpjpe": 0.12386248543388231,
+  "parameters": 1813891,
+  "inference_seconds": 0.009286568000097759,
+  "samples_per_second": 107.68240753629038
+}

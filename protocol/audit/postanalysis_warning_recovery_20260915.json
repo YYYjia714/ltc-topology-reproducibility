@@ -1,0 +1,7 @@
+{
+  "status": "authorized_manual_recovery",
+  "reason": "PowerShell 5 promoted a PyTorch UserWarning on native stderr to a terminating error before Python exit-code evaluation",
+  "mitigation": "Suppress only the matching enable_nested_tensor UserWarning through PYTHONWARNINGS; frozen scripts, plan, data, checkpoints, and authorization hashes remain unchanged",
+  "original_failure_utc": "2026-09-15T03:43:38.2110189Z",
+  "recovery_started_utc": "2026-09-15T06:13:03.5306532Z"
+}

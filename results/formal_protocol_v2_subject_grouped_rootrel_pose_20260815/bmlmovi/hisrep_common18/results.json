@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "dataset": "BMLmovi",
+  "model": "HisRepItself-BMLmovi-clean-retrain-25in25out",
+  "input_n": 25,
+  "output_n": 25,
+  "best_epoch": 27,
+  "best_val_mpjpe": 9.940049389661368,
+  "epochs_completed": 30,
+  "epochs_total": 30,
+  "parameters": 3188048,
+  "elapsed_seconds": 12247.059751749039,
+  "run_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18",
+  "best_checkpoint": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\best.pt",
+  "resume_from": null,
+  "resumed_after_epoch": 0,
+  "resume_rng_restored": false
+}

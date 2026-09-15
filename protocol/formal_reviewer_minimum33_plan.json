@@ -1,0 +1,1028 @@
+{
+  "protocol": "reviewer_required_minimum_revision",
+  "version": "20260823-minimum33-v1",
+  "created_utc": "2026-08-22T18:04:03.092470+00:00",
+  "project_root": "E:\\AMASS_LNN_Project",
+  "run_root": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823",
+  "data_root": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose",
+  "new_training_stage_count": 33,
+  "reused_training_artifact_count": 9,
+  "strict_order": [
+    "cmu",
+    "kit",
+    "bmlmovi"
+  ],
+  "representation": "controlled common18 for CMU/KIT/BMLmovi",
+  "scope_policy": "No additional database is introduced. Multi-seed main-model evidence spans all three datasets; root guidance, compact sensitivity, recent-model coverage, and topology 2x2 are evaluated on representative CMU.",
+  "split_manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+  "checkpoint_selection": "legacy-compatible normalized validation MPJPE for reused/common18 LTC comparisons; all frozen checkpoints are re-evaluated by one physical-coordinate evaluator",
+  "defaults": {
+    "history": 25,
+    "future_step": 25,
+    "validation_horizon": 75,
+    "stride": 5,
+    "epochs": 30,
+    "batch_size": 128,
+    "num_workers": 0,
+    "ltc_lr": 0.0002,
+    "hisrep_lr": 0.0005,
+    "baseline_lr": 0.0002,
+    "weight_decay": 0.0001,
+    "hidden_size": 256,
+    "num_layers": 2,
+    "dropout": 0.0,
+    "lambda_26_50": 0.7,
+    "lambda_51_75": 0.5,
+    "lambda_bone": 0.1,
+    "lambda_anchor": 0.1,
+    "lambda_velocity": 0.05
+  },
+  "recent_method_provenance": [
+    {
+      "method": "MSR-GCN",
+      "family": "graph",
+      "local_source": "E:\\AMASS_LNN_Project\\sota_models\\MSRGCN",
+      "adaptation": "controlled common18 two-scale residual GCN reimplementation"
+    },
+    {
+      "method": "ST-Transformer",
+      "family": "transformer",
+      "source_url": "https://github.com/eth-ait/motion-transformer",
+      "adaptation": "controlled PyTorch common18 spatial-temporal reimplementation"
+    },
+    {
+      "method": "siMLPe",
+      "family": "mlp",
+      "local_source": "E:\\AMASS_LNN_Project\\sota_models\\siMLPe",
+      "adaptation": "controlled common18 DCT residual-MLP reimplementation"
+    },
+    {
+      "method": "HumanMAC",
+      "family": "diffusion",
+      "source_url": "https://github.com/LinghaoChan/HumanMAC",
+      "adaptation": "controlled common18 masked-completion diffusion reimplementation"
+    }
+  ],
+  "source_sha256": {
+    "E:\\AMASS_LNN_Project\\build_reviewer_minimum33_plan_20260823.py": "ce93e915021596b73a27f27857a04c8d316fc279165a326f43078af5e6c949ee",
+    "E:\\AMASS_LNN_Project\\src\\models.py": "14fe38a78f1cf15795d623c3ea5fc388a9565463f08d6036267cbd17f81e7abe",
+    "E:\\AMASS_LNN_Project\\src\\reviewer_baselines.py": "ea748e996e7e196ea1216fbfe776c66c683de616e2cbf12d79250c7e1677ff11",
+    "E:\\AMASS_LNN_Project\\train.py": "1dbd38a8cba5f124ff8e94dc42055f4c56510f41f4b1e98b7d7241a81ccd97e0",
+    "E:\\AMASS_LNN_Project\\train_ltc_topology_rollout_consistency.py": "10cfcde1174e94a462a33e7a17ff9f17be970bede79542d23b3c358d5e7eae84",
+    "E:\\AMASS_LNN_Project\\train_protocol_v2_revision_20260821.py": "9cfe73565206a62391085816031b82d731fd34180a1d9bc0b496cc752266322a",
+    "E:\\AMASS_LNN_Project\\train_protocol_v2_revision_hisrep_20260821.py": "01eb0cac15c0c25c6d0602bf0414712accd705a88437f28e8f92c329c6a71758",
+    "E:\\AMASS_LNN_Project\\train_hisrep_cmu_clean.py": "9868a90a37cf7e2e3c09c4ab6d3cb2fec7ddbe0566a9a7b54592e588c9a9496a",
+    "E:\\AMASS_LNN_Project\\train_protocol_v2_reviewer_baseline_20260822.py": "18dc3f7c598240b29f04d738861ca675a55be8b5e6bcccf802168756d3b941f5",
+    "E:\\AMASS_LNN_Project\\train_reviewer_ltc_legacy_compatible_20260822.py": "4ae0b673f0d2c3fdea8d6cd0a103c89b446c91d84c25fa9ac1424d96fbcbd652",
+    "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_stage_20260823.ps1": "bdeb1d23c035f87218b92964f4db1c30bf7e1477b12ad200a03bbb90f86d5090",
+    "E:\\AMASS_LNN_Project\\manage_reviewer_minimum33_queue_20260823.ps1": "1b66b3357d52c08fb9273b18909ac2c37a5733de255dda2a944e440f6952fecd",
+    "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_smoke_20260823.ps1": "f439fc7caea32642b3bb0217f45b13cf73620260e4a994868963b7bb1dcdbf7a",
+    "E:\\AMASS_LNN_Project\\run_reviewer_minimum33_postanalysis_20260823.ps1": "291be31b7762b235ac6a621fa36d5c929cde4823c038079af39db51e8a68f28c",
+    "E:\\AMASS_LNN_Project\\audit_reviewer_minimum33_preflight_20260823.py": "deff7c7d5825c3a1d3213091a9807574e0622e56a20d9c67b2f2382b0e848eaa",
+    "E:\\AMASS_LNN_Project\\materialize_reviewer_reuse_20260822.py": "206821d9954bd993f3e6ddbf1556eb0480ed5076da0552174365a2840fc5e284",
+    "E:\\AMASS_LNN_Project\\scripts\\evaluate_reviewer_minimum33_20260823.py": "d29daff521552cf62f48259d8944a50e75a67ac78f3c5d4dbdf2d91ed0418496",
+    "E:\\AMASS_LNN_Project\\scripts\\benchmark_reviewer_minimum33_efficiency_20260823.py": "cf50600593892d29b9de655d47a64cfc6332273d6de5a8aee135659240820635",
+    "E:\\AMASS_LNN_Project\\scripts\\plot_reviewer_minimum33_curves_20260823.py": "3db3ca2843dbda3761579fa86d617728a7a750014902c104b80c2f766c26a542",
+    "E:\\AMASS_LNN_Project\\scripts\\audit_reviewer_minimum33_20260823.py": "8203d415de9b880d98f6060e324f29dffa647c803ee5b8799a9b1b8ef076053f"
+  },
+  "reused_artifacts": [
+    {
+      "id": "reuse_cmu_seed42_skeleton_no_rollout",
+      "dataset": "cmu",
+      "seed": 42,
+      "role": "skeleton_no_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_no_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_cmu_seed42_skeleton_full_rollout",
+      "dataset": "cmu",
+      "seed": 42,
+      "role": "skeleton_full_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\common18_full_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_cmu_seed42_hisrep",
+      "dataset": "cmu",
+      "seed": 42,
+      "role": "hisrep",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\cmu\\hisrep_common18",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json",
+        "config.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS",
+        "input_n": 25,
+        "output_n": 25,
+        "model_output_n": 10,
+        "itera": 3,
+        "dct_n": 20,
+        "stride": 5
+      }
+    },
+    {
+      "id": "reuse_kit_seed42_skeleton_no_rollout",
+      "dataset": "kit",
+      "seed": 42,
+      "role": "skeleton_no_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_no_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_kit_seed42_skeleton_full_rollout",
+      "dataset": "kit",
+      "seed": 42,
+      "role": "skeleton_full_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\common18_full_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_kit_seed42_hisrep",
+      "dataset": "kit",
+      "seed": 42,
+      "role": "hisrep",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json",
+        "config.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS",
+        "input_n": 25,
+        "output_n": 25,
+        "model_output_n": 10,
+        "itera": 3,
+        "dct_n": 20,
+        "stride": 5
+      }
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_skeleton_no_rollout",
+      "dataset": "bmlmovi",
+      "seed": 42,
+      "role": "skeleton_no_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_skeleton_full_rollout",
+      "dataset": "bmlmovi",
+      "seed": 42,
+      "role": "skeleton_full_rollout",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS"
+      }
+    },
+    {
+      "id": "reuse_bmlmovi_seed42_hisrep",
+      "dataset": "bmlmovi",
+      "seed": 42,
+      "role": "hisrep",
+      "source_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18",
+      "required_outputs": [
+        "best.pt",
+        "results.json",
+        "train_history.json",
+        "config.json"
+      ],
+      "compatibility_requirements": {
+        "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+        "representation": "common18",
+        "history": 25,
+        "future_step": 25,
+        "validation_horizon": 75,
+        "epochs": 30,
+        "batch_size": 128,
+        "seed": 42,
+        "dataset_audit_status": "PASS",
+        "input_n": 25,
+        "output_n": 25,
+        "model_output_n": 10,
+        "itera": 3,
+        "dct_n": 20,
+        "stride": 5
+      }
+    }
+  ],
+  "stages": [
+    {
+      "id": "cmu_seed123_skeleton_no_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed123_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "cmu_seed123_skeleton_full_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed123_skeleton_full_rollout",
+      "depends_on": [
+        "cmu_seed123_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "cmu_seed123_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed123_hisrep",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "hisrep",
+      "output_rel": "cmu/seed123_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 123,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "cmu_seed456_skeleton_no_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed456_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "cmu_seed456_skeleton_full_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed456_skeleton_full_rollout",
+      "depends_on": [
+        "cmu_seed456_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "cmu_seed456_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed456_hisrep",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "hisrep",
+      "output_rel": "cmu/seed456_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 456,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "cmu_seed42_no_anchor_no_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_no_anchor_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": false,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_ablation_exact"
+    },
+    {
+      "id": "cmu_seed42_no_anchor_full_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_no_anchor_full_rollout",
+      "depends_on": [
+        "cmu_seed42_no_anchor_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": false,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_id": "cmu_seed42_no_anchor_no_rollout"
+    },
+    {
+      "id": "cmu_seed42_sensitivity_regularizers_half",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_sensitivity_regularizers_half",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "regularizers_half",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_reuse_id": "reuse_cmu_seed42_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed42_sensitivity_regularizers_double",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_sensitivity_regularizers_double",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "regularizers_double",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_reuse_id": "reuse_cmu_seed42_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed42_sensitivity_no_velocity",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_sensitivity_no_velocity",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "no_velocity",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_reuse_id": "reuse_cmu_seed42_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed42_sensitivity_equal_stage_weights",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_sensitivity_equal_stage_weights",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "equal_stage_weights",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_reuse_id": "reuse_cmu_seed42_skeleton_no_rollout"
+    },
+    {
+      "id": "cmu_seed42_lstm",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "baseline",
+      "output_rel": "cmu/seed42_lstm",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "lstm",
+      "family": "recurrent",
+      "seed": 42
+    },
+    {
+      "id": "cmu_seed42_msrgcn",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "baseline",
+      "output_rel": "cmu/seed42_msrgcn",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "msrgcn",
+      "family": "graph",
+      "seed": 42,
+      "batch_size_override": 128
+    },
+    {
+      "id": "cmu_seed42_st_transformer",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "baseline",
+      "output_rel": "cmu/seed42_st_transformer",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "st_transformer",
+      "family": "transformer",
+      "seed": 42,
+      "batch_size_override": 64
+    },
+    {
+      "id": "cmu_seed42_simlpe",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "baseline",
+      "output_rel": "cmu/seed42_simlpe",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "simlpe",
+      "family": "mlp",
+      "seed": 42,
+      "batch_size_override": 128
+    },
+    {
+      "id": "cmu_seed42_humanmac",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "baseline",
+      "output_rel": "cmu/seed42_humanmac",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "humanmac",
+      "family": "diffusion",
+      "seed": 42,
+      "batch_size_override": 32
+    },
+    {
+      "id": "cmu_seed42_original_ltc_no_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_original_ltc_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": false,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_ablation_exact"
+    },
+    {
+      "id": "cmu_seed42_original_ltc_full_rollout",
+      "dataset": "cmu",
+      "dataset_name": "CMU",
+      "kind": "ltc",
+      "output_rel": "cmu/seed42_original_ltc_full_rollout",
+      "depends_on": [
+        "cmu_seed42_original_ltc_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc",
+      "seed": 42,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": false,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_ablation_exact",
+      "warm_start_id": "cmu_seed42_original_ltc_no_rollout"
+    },
+    {
+      "id": "kit_seed123_skeleton_no_rollout",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "ltc",
+      "output_rel": "kit/seed123_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "kit_seed123_skeleton_full_rollout",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "ltc",
+      "output_rel": "kit/seed123_skeleton_full_rollout",
+      "depends_on": [
+        "kit_seed123_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "kit_seed123_skeleton_no_rollout"
+    },
+    {
+      "id": "kit_seed123_hisrep",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "hisrep",
+      "output_rel": "kit/seed123_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 123,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "kit_seed456_skeleton_no_rollout",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "ltc",
+      "output_rel": "kit/seed456_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "kit_seed456_skeleton_full_rollout",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "ltc",
+      "output_rel": "kit/seed456_skeleton_full_rollout",
+      "depends_on": [
+        "kit_seed456_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "kit_seed456_skeleton_no_rollout"
+    },
+    {
+      "id": "kit_seed456_hisrep",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "hisrep",
+      "output_rel": "kit/seed456_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 456,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "kit_seed42_lstm",
+      "dataset": "kit",
+      "dataset_name": "KIT",
+      "kind": "baseline",
+      "output_rel": "kit/seed42_lstm",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "lstm",
+      "family": "recurrent",
+      "seed": 42
+    },
+    {
+      "id": "bmlmovi_seed123_skeleton_no_rollout",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "ltc",
+      "output_rel": "bmlmovi/seed123_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "bmlmovi_seed123_skeleton_full_rollout",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "ltc",
+      "output_rel": "bmlmovi/seed123_skeleton_full_rollout",
+      "depends_on": [
+        "bmlmovi_seed123_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 123,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "bmlmovi_seed123_skeleton_no_rollout"
+    },
+    {
+      "id": "bmlmovi_seed123_hisrep",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "hisrep",
+      "output_rel": "bmlmovi/seed123_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 123,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "bmlmovi_seed456_skeleton_no_rollout",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "ltc",
+      "output_rel": "bmlmovi/seed456_skeleton_no_rollout",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "no_rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "bmlmovi_seed456_skeleton_full_rollout",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "ltc",
+      "output_rel": "bmlmovi/seed456_skeleton_full_rollout",
+      "depends_on": [
+        "bmlmovi_seed456_skeleton_no_rollout"
+      ],
+      "required_outputs": [
+        "best.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "objective": "rollout",
+      "model": "ltc_topology",
+      "seed": 456,
+      "adjacency_mode": "skeleton",
+      "anchor_guidance": true,
+      "loss_profile": "default",
+      "compatibility_profile": "legacy_seed42_exact",
+      "warm_start_id": "bmlmovi_seed456_skeleton_no_rollout"
+    },
+    {
+      "id": "bmlmovi_seed456_hisrep",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "hisrep",
+      "output_rel": "bmlmovi/seed456_hisrep",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "config.json",
+        "train_history.json",
+        "results.json"
+      ],
+      "seed": 456,
+      "observation_frames": 25,
+      "internal_input_frames": 25,
+      "observation_adapter": "legacy_direct_25_frame_input",
+      "compatibility_profile": "legacy_seed42_exact"
+    },
+    {
+      "id": "bmlmovi_seed42_lstm",
+      "dataset": "bmlmovi",
+      "dataset_name": "BMLmovi",
+      "kind": "baseline",
+      "output_rel": "bmlmovi/seed42_lstm",
+      "depends_on": [],
+      "required_outputs": [
+        "best.pt",
+        "last.pt",
+        "train_history.json",
+        "results.json"
+      ],
+      "baseline": "lstm",
+      "family": "recurrent",
+      "seed": 42
+    }
+  ],
+  "post_training_analyses": [
+    "reused_artifact_compatibility_audit",
+    "test_sequence_prediction_export",
+    "subject_clustered_full_vs_hisrep_and_full_vs_lstm_statistics",
+    "three_seed_mean_sd_and_confidence_intervals",
+    "root_guidance_ablation_table",
+    "loss_sensitivity_table",
+    "recent_method_common18_table",
+    "topology_by_rollout_2x2_interaction",
+    "common18_efficiency_throughput_latency_peak_memory",
+    "training_validation_curves",
+    "complete_artifact_hash_audit"
+  ],
+  "formal_gate": {
+    "status": "LOCKED_PENDING_SMOKE_REVIEW_AND_EXPLICIT_AUTHORIZATION",
+    "requires": [
+      "all source files frozen by SHA-256",
+      "all five common18 model kinds pass smoke training",
+      "reused seed42 compatibility audit passes",
+      "formal static code review status PASS",
+      "formal authorization binds plan, inventory, smoke, and review hashes"
+    ]
+  }
+}

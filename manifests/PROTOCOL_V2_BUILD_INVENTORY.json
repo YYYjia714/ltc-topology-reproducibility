@@ -1,0 +1,81 @@
+{
+  "status": "DATA_BUILT_AND_SMOKE_TESTED",
+  "created_at": "2026-08-15T22:34:05.2178650+08:00",
+  "protocol_root": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose",
+  "frozen_manifest_sha256": "2E4ED5AFB524C328EFDD1246FA61FB96E104B39484E17D55784FA3EF2AEC879E",
+  "smoke_status": "PASS",
+  "failed_checks": 0,
+  "training_started": false,
+  "datasets": [
+    {
+      "directory": "cmu\\native25",
+      "dataset": "CMU",
+      "representation": "native25",
+      "train_windows": 537412,
+      "val_windows": 67201,
+      "test_windows": 67128,
+      "size_bytes": 10168123933,
+      "metadata_sha256": "6c04539b89e30f9437d5244cea8d56166ab1797e3f0bf1c9d73ab2d5bc6757bf",
+      "build_complete": true
+    },
+    {
+      "directory": "cmu\\common18",
+      "dataset": "CMU",
+      "representation": "common18",
+      "train_windows": 537412,
+      "val_windows": 67201,
+      "test_windows": 67128,
+      "size_bytes": 7346811148,
+      "metadata_sha256": "add9c92273d298eeb6a55280b5969ca4256b044b67207417a74dc8793841ff7b",
+      "build_complete": true
+    },
+    {
+      "directory": "kit\\native25",
+      "dataset": "KIT",
+      "representation": "native25",
+      "train_windows": 483951,
+      "val_windows": 60682,
+      "test_windows": 60690,
+      "size_bytes": 9291710555,
+      "metadata_sha256": "4b9773ea8d559f1a1363236cb6c907336791420f117b837e4d01bdccff0cb4a2",
+      "build_complete": true
+    },
+    {
+      "directory": "kit\\common18",
+      "dataset": "KIT",
+      "representation": "common18",
+      "train_windows": 483951,
+      "val_windows": 60682,
+      "test_windows": 60690,
+      "size_bytes": 6749353369,
+      "metadata_sha256": "b397ac0a1f313f63e6bbdee893a7c0913ae0e80fec453c6db98d09775645ae39",
+      "build_complete": true
+    },
+    {
+      "directory": "bmlmovi\\native25",
+      "dataset": "BMLmovi",
+      "representation": "native25",
+      "train_windows": 186365,
+      "val_windows": 23600,
+      "test_windows": 23605,
+      "size_bytes": 3579071171,
+      "metadata_sha256": "e8a0cddb1de8a5bd31dd95b88f02fbf69a0759a086a76829ada27f6cc0531fa3",
+      "build_complete": true
+    },
+    {
+      "directory": "bmlmovi\\common18",
+      "dataset": "BMLmovi",
+      "representation": "common18",
+      "train_windows": 186365,
+      "val_windows": 23600,
+      "test_windows": 23605,
+      "size_bytes": 2598076584,
+      "metadata_sha256": "1a37bbbca02f24575a203870cda07811d3395ad86ac16050f63baa164ad2c8b0",
+      "build_complete": true
+    }
+  ],
+  "data_smoke_status_after_anchor_metadata": "PASS",
+  "runtime_smoke_status": "PASS",
+  "runtime_smoke_paths": 9,
+  "formal_training_started": false
+}

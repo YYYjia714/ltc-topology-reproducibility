@@ -1,0 +1,20 @@
+﻿{
+    "freeze_status":  "FROZEN",
+    "frozen_at":  "2026-08-15T22:28:48.8102274+08:00",
+    "source_manifest":  "C:\\Users\\1\\Desktop\\LTC拓扑75\\NEWsanwei75\\PROTOCOL_V2_READINESS_AUDIT_20260815\\candidate_subject_grouped_sequence_manifest.csv",
+    "frozen_manifest":  "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\manifests\\frozen_subject_grouped_sequence_manifest.csv",
+    "sha256":  "2E4ED5AFB524C328EFDD1246FA61FB96E104B39484E17D55784FA3EF2AEC879E",
+    "row_count":  7298,
+    "datasets":  [
+                     "BMLmovi",
+                     "CMU",
+                     "KIT"
+                 ],
+    "split_policy":  "subject-grouped deterministic balanced split; sequence manifest frozen before window materialization",
+    "representation_policy":  [
+                                  "native25",
+                                  "common18"
+                              ],
+    "coordinate_policy":  "root-relative pose; center_on_first_frame=false",
+    "training_started":  false
+}

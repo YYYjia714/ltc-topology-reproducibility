@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "bmlmovi",
+    "stage":  "audit",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-20T20:31:20.4535318+08:00",
+    "finished_at":  "2026-08-20T20:32:16.4611612+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\bmlmovi_audit.log"
+}

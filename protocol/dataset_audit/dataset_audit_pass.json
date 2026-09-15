@@ -1,0 +1,10 @@
+﻿{
+    "status":  "PASS",
+    "dataset":  "BMLmovi",
+    "manifest_sha256":  "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+    "evaluated_at":  "2026-08-20T20:32:16.4393383+08:00",
+    "metric_file":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\audit\\bmlmovi_physical_metrics.json",
+    "test_windows_native25":  21295,
+    "test_windows_common18":  21295,
+    "window_fingerprint_match":  true
+}

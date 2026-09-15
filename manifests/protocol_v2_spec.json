@@ -1,0 +1,83 @@
+{
+  "protocol_name": "Protocol v2: locked root-relative pose protocol",
+  "split_options": {
+    "minimum_revision": "locked complete-sequence split before window generation",
+    "strong_revision": "locked subject-grouped split before window generation"
+  },
+  "coordinates": "joints_root_relative",
+  "center_on_first_frame": false,
+  "stored_unit": "meter",
+  "history": 25,
+  "future_block": 25,
+  "rollout_horizon": 75,
+  "rollout_context": "latest 25 frames only",
+  "evaluation_stride": 5,
+  "native_joint_representation": {
+    "num_joints": 25,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  "controlled_hisrep_representation": {
+    "num_joints": 18,
+    "indices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "graph": "contracted common-18 tree"
+  },
+  "normalization": {
+    "ltc_family": "per-channel mean/std from training split only",
+    "hisrep": "same physical coordinates with model-native conversion from meters to millimeters",
+    "metric_space": "denormalized physical coordinates in millimeters"
+  },
+  "bone_metric": "actual contracted skeleton edges only; visualization-only links excluded",
+  "timing": {
+    "joint_representation": "common-18 for both models",
+    "batch_size": "identical",
+    "precision": "FP32",
+    "data_loading": "excluded for both",
+    "cuda_synchronize": "before and after each timed region",
+    "warmup_and_repetitions": "identical and reported"
+  }
+}

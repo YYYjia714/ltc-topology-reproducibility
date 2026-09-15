@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "kit",
+    "stage":  "common18_no_rollout",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-19T02:02:19.0725734+08:00",
+    "finished_at":  "2026-08-19T03:48:22.8342771+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\kit_common18_no_rollout.log"
+}

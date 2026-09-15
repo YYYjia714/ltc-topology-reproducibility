@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "cmu",
+    "stage":  "common18_full_rollout",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-16T16:49:54.7141250+08:00",
+    "finished_at":  "2026-08-17T06:53:07.1368606+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\cmu_common18_full_rollout.log"
+}

@@ -1,0 +1,108 @@
+{
+  "dataset": "CMU",
+  "model": "ltc_topology",
+  "method_name": "ltc_topology with legacy-compatible rollout consistency training",
+  "training_objective": "rollout",
+  "epochs_total": 30,
+  "best_epoch": 3,
+  "best_epoch_label": "3",
+  "best_at_final_epoch": false,
+  "best_val_mpjpe": 0.6331354516553209,
+  "best_val_mpjpe_1_75": 0.6331354516553209,
+  "parameters": 1812995,
+  "inference_seconds": 0.013004783999640494,
+  "samples_per_second": 76.89477964629356,
+  "optimizer": "adam",
+  "normalized": true,
+  "loss_coordinate_space": "normalized",
+  "checkpoint_selection": "validation recursive normalized MPJPE over frames 1-75",
+  "use_topology_encoder": true,
+  "use_topology_decoder": true,
+  "use_root_guidance": true,
+  "warm_start": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\reused\\cmu\\seed42_skeleton_no_rollout\\best_compatible.pt",
+  "rollout_consistency": {
+    "horizon": 75,
+    "future_step": 25,
+    "lambda_26_50": 0.7,
+    "lambda_51_75": 0.5,
+    "lambda_bone": 0.2,
+    "lambda_root": 0.2,
+    "lambda_velocity": 0.1,
+    "train_windows": 524572,
+    "val_windows": 63776,
+    "batch_size": 128,
+    "num_workers": 0,
+    "pin_memory": false,
+    "guidance_joint_index": 2,
+    "skeleton_edges": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        16
+      ],
+      [
+        15,
+        17
+      ]
+    ]
+  }
+}

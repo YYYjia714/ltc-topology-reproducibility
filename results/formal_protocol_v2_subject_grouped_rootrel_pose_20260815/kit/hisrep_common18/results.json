@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "dataset": "KIT",
+  "model": "HisRepItself-KIT-clean-retrain-25in25out",
+  "input_n": 25,
+  "output_n": 25,
+  "best_epoch": 25,
+  "best_val_mpjpe": 6.433068473456714,
+  "epochs_completed": 30,
+  "epochs_total": 30,
+  "parameters": 3188048,
+  "elapsed_seconds": 63234.999648332596,
+  "run_dir": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18",
+  "best_checkpoint": "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\kit\\hisrep_common18\\best.pt",
+  "resume_from": null,
+  "resumed_after_epoch": 0,
+  "resume_rng_restored": false
+}

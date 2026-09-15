@@ -1,0 +1,92 @@
+﻿{
+    "stage_id":  "kit_seed123_hisrep",
+    "dataset":  "kit",
+    "kind":  "hisrep",
+    "status":  "completed",
+    "exit_code":  0,
+    "smoke":  false,
+    "started_at":  "2026-09-12T08:20:17.7501100+08:00",
+    "finished_at":  "2026-09-13T03:12:04.2508942+08:00",
+    "run_dir":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep",
+    "progress_file":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\progress\\kit_seed123_hisrep.json",
+    "log_file":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\logs\\kit_seed123_hisrep.log",
+    "command":  [
+                    "E:\\AMASS_LNN_Project\\.venv\\Scripts\\python.exe",
+                    "E:\\AMASS_LNN_Project\\train_hisrep_cmu_clean.py",
+                    "--dataset-name",
+                    "KIT",
+                    "--metadata",
+                    "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\kit\\common18\\metadata.json",
+                    "--run-dir",
+                    "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep",
+                    "--progress-path",
+                    "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\progress\\kit_seed123_hisrep.json",
+                    "--input-n",
+                    "25",
+                    "--output-n",
+                    "25",
+                    "--model-output-n",
+                    "10",
+                    "--itera",
+                    "3",
+                    "--dct-n",
+                    "20",
+                    "--epochs",
+                    "30",
+                    "--batch-size",
+                    "128",
+                    "--test-batch-size",
+                    "128",
+                    "--lr",
+                    "0.0005",
+                    "--seed",
+                    "123",
+                    "--stride",
+                    "5",
+                    "--num-workers",
+                    "0",
+                    "--max-train-windows",
+                    "0",
+                    "--max-val-windows",
+                    "0",
+                    "--expected-manifest-sha256",
+                    "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+                    "--disable-tqdm",
+                    "--device",
+                    "cuda"
+                ],
+    "script_sha256":  "fe1c40e9b99eb9ec671b711401ad7df22c11165a6b4c42b16a6c09a43f0c0b43",
+    "plan_sha256":  "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69",
+    "artifacts":  [
+                      {
+                          "name":  "best.pt",
+                          "path":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep\\best.pt",
+                          "size":  41215516,
+                          "sha256":  "7c44c998b21086b7516a3c8e88521c4ae6ad959181eedac1c13a3873e2bb61d5"
+                      },
+                      {
+                          "name":  "last.pt",
+                          "path":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep\\last.pt",
+                          "size":  41215516,
+                          "sha256":  "967fc1404fb62afee2251bf1a85198a9072ce4716b914c185bc8ddd4084fe453"
+                      },
+                      {
+                          "name":  "config.json",
+                          "path":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep\\config.json",
+                          "size":  1020,
+                          "sha256":  "6d8679e117422a002d433dfaa8f15f71457a74e581192c9c506275ae956d5788"
+                      },
+                      {
+                          "name":  "train_history.json",
+                          "path":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep\\train_history.json",
+                          "size":  8985,
+                          "sha256":  "7a79901244040a064b917cfa890163c20bb520810213fe164a1c2a7434e6b640"
+                      },
+                      {
+                          "name":  "results.json",
+                          "path":  "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\kit\\seed123_hisrep\\results.json",
+                          "size":  646,
+                          "sha256":  "2e5664200a9c283899b8e51e3d9b38f809241e38385b0910f88f85874e2d8f8e"
+                      }
+                  ]
+}

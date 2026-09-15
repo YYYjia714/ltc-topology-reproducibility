@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "bmlmovi",
+    "stage":  "common18_no_rollout",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-20T12:31:07.7179598+08:00",
+    "finished_at":  "2026-08-20T13:11:15.7612638+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\bmlmovi_common18_no_rollout.log"
+}

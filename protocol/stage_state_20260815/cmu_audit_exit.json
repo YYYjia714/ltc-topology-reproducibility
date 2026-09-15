@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "cmu",
+    "stage":  "audit",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-18T13:10:23.4536606+08:00",
+    "finished_at":  "2026-08-18T13:13:06.8108343+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\cmu_audit.log"
+}

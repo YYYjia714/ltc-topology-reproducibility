@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "dataset": "CMU",
+  "model": "HisRepItself-CMU-clean-retrain-25in25out",
+  "input_n": 25,
+  "output_n": 25,
+  "best_epoch": 29,
+  "best_val_mpjpe": 19.49040090455017,
+  "epochs_completed": 30,
+  "epochs_total": 30,
+  "parameters": 3188048,
+  "elapsed_seconds": 112449.26374411583,
+  "run_dir": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\cmu\\seed456_hisrep",
+  "best_checkpoint": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\cmu\\seed456_hisrep\\best.pt",
+  "resume_from": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\cmu\\seed456_hisrep\\last.pt",
+  "resumed_after_epoch": 9,
+  "resume_rng_restored": true
+}

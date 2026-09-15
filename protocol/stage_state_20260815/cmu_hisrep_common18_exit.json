@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "cmu",
+    "stage":  "hisrep_common18",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-17T18:56:00.2237466+08:00",
+    "finished_at":  "2026-08-18T11:43:32.2732949+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\cmu_hisrep_common18.log"
+}

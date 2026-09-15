@@ -1,0 +1,408 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-09-15T07:44:05.773239+00:00",
+  "plan": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+  "plan_sha256": "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69",
+  "training_stages_completed": 33,
+  "reused_seed42_artifacts": 9,
+  "checks": [
+    {
+      "name": "training_stage_count",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "name": "stage_cmu_seed123_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed123_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed123_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed123_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed123_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed123_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed456_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed456_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed456_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed456_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed456_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed456_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_no_anchor_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_no_anchor_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_no_anchor_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_no_anchor_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_sensitivity_regularizers_half",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_sensitivity_regularizers_half_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_sensitivity_regularizers_double",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_sensitivity_regularizers_double_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_sensitivity_no_velocity",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_sensitivity_no_velocity_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_sensitivity_equal_stage_weights",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_sensitivity_equal_stage_weights_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_lstm",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_lstm_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_msrgcn",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_msrgcn_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_st_transformer",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_st_transformer_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_simlpe",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_simlpe_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_humanmac",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_humanmac_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_original_ltc_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_original_ltc_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_cmu_seed42_original_ltc_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\cmu_seed42_original_ltc_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed123_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed123_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed123_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed123_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed123_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed123_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed456_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed456_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed456_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed456_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed456_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed456_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_kit_seed42_lstm",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\kit_seed42_lstm_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed123_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed123_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed123_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed123_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed123_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed123_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed456_skeleton_no_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed456_skeleton_no_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed456_skeleton_full_rollout",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed456_skeleton_full_rollout_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed456_hisrep",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed456_hisrep_exit.json"
+      }
+    },
+    {
+      "name": "stage_bmlmovi_seed42_lstm",
+      "passed": true,
+      "detail": {
+        "exit_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\stage_state\\bmlmovi_seed42_lstm_exit.json"
+      }
+    },
+    {
+      "name": "reused_seed42_inventory",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\reused\\reused_inventory.json"
+    },
+    {
+      "name": "analysis_aggregate",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\aggregate_metrics.csv"
+    },
+    {
+      "name": "analysis_multiseed",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\multiseed_summary.csv"
+    },
+    {
+      "name": "analysis_sensitivity",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\sensitivity_summary.csv"
+    },
+    {
+      "name": "analysis_statistics",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\paired_statistics.csv"
+    },
+    {
+      "name": "analysis_ablation",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\ablation_contrasts.csv"
+    },
+    {
+      "name": "analysis_sequence_summary",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\sequence_evaluation_summary.json"
+    },
+    {
+      "name": "analysis_efficiency_csv",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\efficiency\\common18_efficiency.csv"
+    },
+    {
+      "name": "analysis_efficiency_json",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\efficiency\\common18_efficiency.json"
+    },
+    {
+      "name": "analysis_stability",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\checkpoint_stability.csv"
+    },
+    {
+      "name": "analysis_curve_summary",
+      "passed": true,
+      "detail": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\curve_summary.json"
+    },
+    {
+      "name": "aggregate_row_count",
+      "passed": true,
+      "detail": 42
+    },
+    {
+      "name": "multiseed_row_count",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "sensitivity_row_count",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "name": "paired_statistics_row_count",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "ablation_row_count",
+      "passed": true,
+      "detail": 24
+    },
+    {
+      "name": "efficiency_row_count",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "stability_row_count",
+      "passed": true,
+      "detail": 18
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\bmlmovi_full_hisrep_curves.png",
+      "size": 272093,
+      "sha256": "1b503b0d6ec28a0584351f82f20e9933a24102de521c29f99cf6331a6e96a2e0"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\checkpoint_stability.csv",
+      "size": 1823,
+      "sha256": "93e4aefe92f55ac14c9b0af5044a42ef2146a39df6a9fe0d14c0dc680db5d9ed"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\cmu_full_hisrep_curves.png",
+      "size": 220323,
+      "sha256": "829f109302e8addcd5e8564cff8c797db3ba026281d7190a7c22c72273beb6e5"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\curve_summary.json",
+      "size": 6310,
+      "sha256": "15c9dbfa8a07363c7331fbeed65353f1646422eac0ee8331ae56c0afe5b49046"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\kit_full_hisrep_curves.png",
+      "size": 261150,
+      "sha256": "6bb9f2153de77746c1a19e8e5f075dbcfcdaed4b8fdb613bf47136048a38deab"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\efficiency\\common18_efficiency.csv",
+      "size": 1640,
+      "sha256": "903a8318cf69c4846093961d06d4738ef42fb82a9f521f9ccffe978a6c6f4dbc"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\efficiency\\common18_efficiency.json",
+      "size": 5771,
+      "sha256": "d58932219b8af6d0209e179ffe2d99ab7d34b9fd50c1f19d472836e5b883488f"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\ablation_contrasts.csv",
+      "size": 7640,
+      "sha256": "99bcbb86444acc8de1ce6a490b1b37e80228fc5b6d1877b6e93f4c702131a4a9"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\aggregate_metrics.csv",
+      "size": 8170,
+      "sha256": "72e8b451736f910802c9d53474740f231e9c88a727383eaa92e8256d3da66d59"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\multiseed_summary.csv",
+      "size": 2360,
+      "sha256": "9bb1f4c9ecc41dad3f31b3caa610228ef55108535847eddc223f43e86dcca714"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\paired_statistics.csv",
+      "size": 6867,
+      "sha256": "ac56f59abdee569a8f278b38d1ec6974640db24a91ad06eacc99392d05dcf283"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\per_sequence_metrics.csv",
+      "size": 3535906,
+      "sha256": "5cd7f5b7ae375d956e00ae7c7ebab2e8720351018d7afc3299d4ed0a57eeaffd"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\sensitivity_summary.csv",
+      "size": 1147,
+      "sha256": "4f2c4ac2c7b652ad78af69a539f4ef4f97d78560208eb4b58e9faeaf34cf32b2"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\sequence\\sequence_evaluation_summary.json",
+      "size": 78817,
+      "sha256": "0a09ddc540bc7681d17148a4f085903cb4766965f7ce68f5ffaf8d96dfe669d0"
+    }
+  ]
+}

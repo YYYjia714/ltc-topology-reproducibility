@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "review_type": "formal_static_code_review_plus_full_path_smoke",
+  "created_utc": "2026-08-22T18:09:41.8371700Z",
+  "plan_path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+  "plan_sha256": "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69",
+  "scope": {
+    "new_training_stages": 33,
+    "reused_seed42_artifacts": 9,
+    "datasets": [
+      "cmu",
+      "kit",
+      "bmlmovi"
+    ],
+    "excluded": [
+      "additional database training",
+      "compute-matched rollout training"
+    ],
+    "formal_training_started": false
+  },
+  "findings": [],
+  "resolved_findings": [
+    {
+      "severity": "HIGH",
+      "issue": "HisRep plan/trainer/evaluator incompatibility",
+      "resolution": "All new HisRep seeds now exactly match the reused seed-42 direct 25-frame configuration; preflight checks input_n=25, output_n=25, model_output_n=10, itera=3, dct_n=20, epochs=30, batch_size=128, and stride=5."
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Post-analysis wrapper could be reported as ordinary RUNNING",
+      "resolution": "Manager process classification now recognizes run_reviewer_minimum33_postanalysis_20260823.ps1 as ANALYSIS_RUNNING."
+    }
+  ],
+  "checks": [
+    {
+      "name": "final_preflight",
+      "passed": true,
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\review\\preflight_final.json"
+    },
+    {
+      "name": "source_hash_freeze",
+      "passed": true,
+      "source_files": 20
+    },
+    {
+      "name": "reused_seed42_compatibility",
+      "passed": true,
+      "records": 9,
+      "hisrep_records": 3
+    },
+    {
+      "name": "final_training_smoke",
+      "passed": true,
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\smoke\\20260823_020414\\smoke_report.json",
+      "records": 33,
+      "exit_hash_mismatches": [],
+      "artifact_mismatches": []
+    },
+    {
+      "name": "postanalysis_full_path_smoke",
+      "passed": true,
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\smoke_analysis_fixture\\20260823_015419\\audit\\reviewer_minimum_audit_pass.json",
+      "analysis_source_hashes_unchanged": true,
+      "expected_counts": {
+        "aggregate": 42,
+        "multiseed": 6,
+        "sensitivity": 5,
+        "paired_statistics": 24,
+        "ablation": 24,
+        "efficiency": 13,
+        "stability": 18
+      }
+    },
+    {
+      "name": "strict_serial_and_locked",
+      "passed": true,
+      "detail": "No formal authorization file is present; manager reports LOCKED at 0/33."
+    }
+  ],
+  "residual_limitations": [
+    "The four recent-method entries are controlled common18 reimplementations/adaptations, not official-author checkpoints or directly comparable published leaderboard numbers; manuscript and response must label them as adaptations.",
+    "No additional database benchmark is included. Address the reviewer by clearly delimiting the common18 protocol and avoiding claims of direct comparability to a standard external leaderboard.",
+    "Topology 2x2, root-guidance ablation, and sensitivity are representative CMU experiments; do not claim that these causal/sensitivity effects were independently replicated on KIT and BMLmovi.",
+    "Smoke results verify execution and artifact contracts only; their one-epoch metrics must never be reported as scientific results."
+  ]
+}

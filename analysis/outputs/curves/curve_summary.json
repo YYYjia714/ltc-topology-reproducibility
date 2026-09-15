@@ -1,0 +1,202 @@
+{
+  "status": "completed",
+  "plan": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\formal_reviewer_minimum33_plan.json",
+  "plan_sha256": "834e1585e6a0fb7bfd47675c3467a56a591d6505b59929d7a4977c3f565a9a69",
+  "figures": [
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\cmu_full_hisrep_curves.png",
+      "sha256": "829f109302e8addcd5e8564cff8c797db3ba026281d7190a7c22c72273beb6e5"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\kit_full_hisrep_curves.png",
+      "sha256": "6bb9f2153de77746c1a19e8e5f075dbcfcdaed4b8fdb613bf47136048a38deab"
+    },
+    {
+      "path": "E:\\AMASS_LNN_Project\\runs\\formal_reviewer_minimum33_revision_20260823\\analysis\\curves\\bmlmovi_full_hisrep_curves.png",
+      "sha256": "1b503b0d6ec28a0584351f82f20e9933a24102de521c29f99cf6331a6e96a2e0"
+    }
+  ],
+  "stability": [
+    {
+      "dataset": "cmu",
+      "method": "Full LTC-Topology",
+      "seed": 42,
+      "best_epoch": 3,
+      "best_validation": 0.6328670492482675,
+      "final_validation": 0.6641731333983824,
+      "final_minus_best": 0.03130608415011482,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "cmu",
+      "method": "Full LTC-Topology",
+      "seed": 123,
+      "best_epoch": 3,
+      "best_validation": 0.6307055337071359,
+      "final_validation": 0.6789502244362327,
+      "final_minus_best": 0.04824469072909676,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "cmu",
+      "method": "Full LTC-Topology",
+      "seed": 456,
+      "best_epoch": 1,
+      "best_validation": 0.6221497814169614,
+      "final_validation": 0.6491865716384873,
+      "final_minus_best": 0.02703679022152583,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "cmu",
+      "method": "HisRepItself",
+      "seed": 42,
+      "best_epoch": 30,
+      "best_validation": 19.479248060782542,
+      "final_validation": 19.479248060782542,
+      "final_minus_best": 0.0,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "cmu",
+      "method": "HisRepItself",
+      "seed": 123,
+      "best_epoch": 30,
+      "best_validation": 19.257017943591627,
+      "final_validation": 19.257017943591627,
+      "final_minus_best": 0.0,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "cmu",
+      "method": "HisRepItself",
+      "seed": 456,
+      "best_epoch": 29,
+      "best_validation": 19.49040090455017,
+      "final_validation": 19.57072886261787,
+      "final_minus_best": 0.08032795806769855,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "kit",
+      "method": "Full LTC-Topology",
+      "seed": 42,
+      "best_epoch": 3,
+      "best_validation": 0.2906541789052022,
+      "final_validation": 0.2965308524300386,
+      "final_minus_best": 0.005876673524836451,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "kit",
+      "method": "Full LTC-Topology",
+      "seed": 123,
+      "best_epoch": 2,
+      "best_validation": 0.3037863676038446,
+      "final_validation": 0.3154989606669762,
+      "final_minus_best": 0.011712593063131604,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "kit",
+      "method": "Full LTC-Topology",
+      "seed": 456,
+      "best_epoch": 13,
+      "best_validation": 0.29360773305742416,
+      "final_validation": 0.29897192125706373,
+      "final_minus_best": 0.005364188199639575,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "kit",
+      "method": "HisRepItself",
+      "seed": 42,
+      "best_epoch": 25,
+      "best_validation": 6.433068473456714,
+      "final_validation": 6.484737830715092,
+      "final_minus_best": 0.05166935725837796,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "kit",
+      "method": "HisRepItself",
+      "seed": 123,
+      "best_epoch": 30,
+      "best_validation": 6.545192822749651,
+      "final_validation": 6.545192822749651,
+      "final_minus_best": 0.0,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "kit",
+      "method": "HisRepItself",
+      "seed": 456,
+      "best_epoch": 26,
+      "best_validation": 6.512016271751992,
+      "final_validation": 6.534857506978481,
+      "final_minus_best": 0.02284123522648951,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "Full LTC-Topology",
+      "seed": 42,
+      "best_epoch": 9,
+      "best_validation": 0.36547477362216385,
+      "final_validation": 0.37299790081842343,
+      "final_minus_best": 0.0075231271962595825,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "Full LTC-Topology",
+      "seed": 123,
+      "best_epoch": 7,
+      "best_validation": 0.3701040737110441,
+      "final_validation": 0.3766875810511743,
+      "final_minus_best": 0.00658350734013019,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "Full LTC-Topology",
+      "seed": 456,
+      "best_epoch": 9,
+      "best_validation": 0.367889787740358,
+      "final_validation": 0.37682997053668443,
+      "final_minus_best": 0.008940182796326412,
+      "unit": "normalized MPJPE"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "HisRepItself",
+      "seed": 42,
+      "best_epoch": 27,
+      "best_validation": 9.940049389661368,
+      "final_validation": 10.002243140592414,
+      "final_minus_best": 0.062193750931045955,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "HisRepItself",
+      "seed": 123,
+      "best_epoch": 30,
+      "best_validation": 9.70660082606946,
+      "final_validation": 9.70660082606946,
+      "final_minus_best": 0.0,
+      "unit": "MPJPE (mm)"
+    },
+    {
+      "dataset": "bmlmovi",
+      "method": "HisRepItself",
+      "seed": 456,
+      "best_epoch": 29,
+      "best_validation": 9.987446825059793,
+      "final_validation": 10.02867484852419,
+      "final_minus_best": 0.04122802346439691,
+      "unit": "MPJPE (mm)"
+    }
+  ],
+  "note": "Full and HisRep panels use their own legacy-compatible validation units and are not overlaid."
+}

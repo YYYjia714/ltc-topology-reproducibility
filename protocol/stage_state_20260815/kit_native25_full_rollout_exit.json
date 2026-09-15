@@ -1,0 +1,9 @@
+﻿{
+    "dataset":  "kit",
+    "stage":  "native25_full_rollout",
+    "status":  "completed",
+    "exit_code":  0,
+    "started_at":  "2026-08-18T15:30:04.1585396+08:00",
+    "finished_at":  "2026-08-19T01:44:13.0111159+08:00",
+    "log":  "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\logs\\kit_native25_full_rollout.log"
+}

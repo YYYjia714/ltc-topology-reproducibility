@@ -1,0 +1,331 @@
+{
+  "status": "completed",
+  "evaluation_protocol": {
+    "split": "test",
+    "stride": 5,
+    "max_windows": 0,
+    "sample_seed": 2026,
+    "history": 25,
+    "rollout_horizon": 75,
+    "coordinate_source": "joints_root_relative",
+    "center_on_first_frame": false,
+    "metric_units": "mm"
+  },
+  "audits": [
+    {
+      "representation": "native25",
+      "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\bmlmovi\\native25\\metadata.json",
+      "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+      "test_windows": 21295,
+      "test_window_records_sha256": "29780c0dfaa97152ebce11e94f4404ff799f5c827a370631d7dfb6e00654c491",
+      "joint_indices_smplx25": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "guidance_joint_index": 0,
+      "skeleton_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          16,
+          18
+        ],
+        [
+          17,
+          19
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          15,
+          24
+        ]
+      ]
+    },
+    {
+      "representation": "common18",
+      "metadata": "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose\\bmlmovi\\common18\\metadata.json",
+      "manifest_sha256": "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+      "test_windows": 21295,
+      "test_window_records_sha256": "29780c0dfaa97152ebce11e94f4404ff799f5c827a370631d7dfb6e00654c491",
+      "joint_indices_smplx25": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "guidance_joint_index": 2,
+      "skeleton_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          15,
+          17
+        ]
+      ]
+    }
+  ],
+  "checkpoint_sha256": {
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_full_rollout\\best.pt": "c5c915195e3bfcec919595bb69acd7cab3165225af98aace1cdbd243109744d2",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\common18_no_rollout\\best.pt": "852310fa43e04669e624e91f04d82f90813fe832fff038f002ade236d901f99b",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\hisrep_common18\\best.pt": "e5623bf673380e04fbadbb90cafdd6e7e4f958fc624f1f28789bd343dbbb6107",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\native25_full_rollout\\best.pt": "f34e0b705fa6d6d12ca8efc8df0235c901e54cfcb4aa7e924823c235342f9e49",
+    "E:\\AMASS_LNN_Project\\runs\\formal_protocol_v2_subject_grouped_rootrel_pose_20260815\\bmlmovi\\native25_no_rollout\\best.pt": "960a5c37bcdb1e22b497c98cb20d5d86b11cb3fc249ec6de96b31256a55e5672"
+  },
+  "metrics": [
+    {
+      "dataset": "BMLmovi",
+      "representation": "native25",
+      "model": "LTC-Topology w/o rollout",
+      "test_windows": 21295,
+      "parameters": 1813891,
+      "mpjpe_1_25_mm": 15.430606019091064,
+      "mpjpe_26_50_mm": 42.88194989170595,
+      "mpjpe_51_75_mm": 63.557658748801366,
+      "mpjpe_1_75_mm": 40.62340672679506,
+      "bone_1_75_mm": 8.273955215123596,
+      "bone_51_75_mm": 12.10756991315431,
+      "velocity_1_75_mm": 2.140142786740753,
+      "velocity_51_75_mm": 2.242986750697888
+    },
+    {
+      "dataset": "BMLmovi",
+      "representation": "native25",
+      "model": "Full LTC-Topology",
+      "test_windows": 21295,
+      "parameters": 1813891,
+      "mpjpe_1_25_mm": 16.266295999695814,
+      "mpjpe_26_50_mm": 41.471920893701146,
+      "mpjpe_51_75_mm": 59.72851255497034,
+      "mpjpe_1_75_mm": 39.155577963197366,
+      "bone_1_75_mm": 7.974130374754391,
+      "bone_51_75_mm": 11.532508821122438,
+      "velocity_1_75_mm": 2.3018696905106104,
+      "velocity_51_75_mm": 2.328775096073988
+    },
+    {
+      "dataset": "BMLmovi",
+      "representation": "common18",
+      "model": "LTC-Topology w/o rollout",
+      "test_windows": 21295,
+      "parameters": 1812995,
+      "mpjpe_1_25_mm": 17.33579299677759,
+      "mpjpe_26_50_mm": 48.87447116043008,
+      "mpjpe_51_75_mm": 73.14446248943241,
+      "mpjpe_1_75_mm": 46.45157454419679,
+      "bone_1_75_mm": 6.8809710210857045,
+      "bone_51_75_mm": 9.96428718437021,
+      "velocity_1_75_mm": 2.490403410749666,
+      "velocity_51_75_mm": 2.6690101030371673
+    },
+    {
+      "dataset": "BMLmovi",
+      "representation": "common18",
+      "model": "Full LTC-Topology",
+      "test_windows": 21295,
+      "parameters": 1812995,
+      "mpjpe_1_25_mm": 18.45182300020367,
+      "mpjpe_26_50_mm": 47.33408263242981,
+      "mpjpe_51_75_mm": 68.0386468167651,
+      "mpjpe_1_75_mm": 44.60818271014466,
+      "bone_1_75_mm": 6.611958323355767,
+      "bone_51_75_mm": 9.36249450769579,
+      "velocity_1_75_mm": 3.1376199553678448,
+      "velocity_51_75_mm": 3.1410411014386708
+    },
+    {
+      "dataset": "BMLmovi",
+      "representation": "common18",
+      "model": "HisRepItself",
+      "test_windows": 21295,
+      "parameters": 3188048,
+      "mpjpe_1_25_mm": 9.895762042636518,
+      "mpjpe_26_50_mm": 34.705384457461236,
+      "mpjpe_51_75_mm": 58.877506562067495,
+      "mpjpe_1_75_mm": 34.49288345179274,
+      "bone_1_75_mm": 5.593225687393758,
+      "bone_51_75_mm": 8.540914405111584,
+      "velocity_1_75_mm": 1.8271686771269218,
+      "velocity_51_75_mm": 2.244014398882047
+    }
+  ]
+}

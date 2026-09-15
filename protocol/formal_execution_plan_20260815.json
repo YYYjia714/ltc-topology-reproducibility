@@ -1,0 +1,106 @@
+﻿{
+    "execution_id":  "formal_protocol_v2_subject_grouped_rootrel_pose_20260815",
+    "status":  "RUNNING",
+    "created_at":  "2026-08-15T23:48:51.5506524+08:00",
+    "protocol_root":  "E:\\AMASS_LNN_Project\\data\\processed\\protocol_v2_subject_grouped_rootrel_pose",
+    "manifest_sha256":  "2e4ed5afb524c328efdd1246fa61fb96e104b39484e17d55784fa3ef2aec879e",
+    "single_gpu_serial":  true,
+    "datasets":  [
+                     "cmu",
+                     "kit",
+                     "bmlmovi"
+                 ],
+    "stages":  [
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "native25_no_rollout"
+                   },
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "native25_full_rollout"
+                   },
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "common18_no_rollout"
+                   },
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "common18_full_rollout"
+                   },
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "hisrep_common18"
+                   },
+                   {
+                       "dataset":  "cmu",
+                       "stage":  "audit"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "native25_no_rollout"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "native25_full_rollout"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "common18_no_rollout"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "common18_full_rollout"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "hisrep_common18"
+                   },
+                   {
+                       "dataset":  "kit",
+                       "stage":  "audit"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "native25_no_rollout"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "native25_full_rollout"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "common18_no_rollout"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "common18_full_rollout"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "hisrep_common18"
+                   },
+                   {
+                       "dataset":  "bmlmovi",
+                       "stage":  "audit"
+                   }
+               ],
+    "training":  {
+                     "epochs":  30,
+                     "batch_size":  128,
+                     "num_workers":  0,
+                     "seed":  42,
+                     "device":  "cuda",
+                     "full_train_windows":  true,
+                     "full_validation_windows":  true
+                 },
+    "scripts":  {
+                    "runner":  "E:\\AMASS_LNN_Project\\run_protocol_v2_formal_stage_20260815.ps1",
+                    "runner_sha256":  "20f9cc1e39b2a67012a478bf44f6865b3209bc0a1f98028e91ead122b8222203",
+                    "manager":  "E:\\AMASS_LNN_Project\\manage_protocol_v2_formal_queue_20260815.ps1",
+                    "manager_sha256":  "1c70ce4eed50fa80f3edf5e35e57ef789a293244e0e1f05ff3a6cd8b23568228",
+                    "evaluator":  "E:\\AMASS_LNN_Project\\scripts\\evaluate_protocol_v2_cmu_pilot.py",
+                    "evaluator_sha256":  "4dbe2f5b95691328b17a37f2675ebccb239cbd511892a56ee8be637eb9a5562a"
+                },
+    "formal_training_started_at":  "2026-08-15T23:50:12.1946710+08:00",
+    "current_stage":  "cmu/native25_no_rollout"
+}
