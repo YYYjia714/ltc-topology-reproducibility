@@ -1,0 +1,2 @@
+# Retain original bytes so frozen source and artifact SHA-256 hashes are portable.
+* -text

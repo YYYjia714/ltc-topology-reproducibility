@@ -1,0 +1,53 @@
+{
+  "release_date": "2026-10-06",
+  "release_scope": "public_code_and_analysis_only",
+  "models_public": false,
+  "zenodo_state": "unpublished_draft_retained",
+  "user_decision": "Release code and analysis now; do not publish models.",
+  "credential_scan": {
+    "findings": 0,
+    "exact_local_credentials_checked": true,
+    "historical_blobs_including_archives_checked": 509
+  },
+  "public_text_email_scan": "No email addresses found in selected package files.",
+  "excluded": [
+    "credentials",
+    "local upload helpers",
+    "raw AMASS motions",
+    "extracted joints",
+    "processed motion windows",
+    "SMPL/SMPL-X/SMPL-H body models",
+    "third-party repositories",
+    "model checkpoints",
+    "author photos",
+    "manuscript and proof PDFs"
+  ],
+  "retained": [
+    "authors code",
+    "training histories",
+    "analysis CSV/JSON",
+    "figure SVGs",
+    "frozen plans and source inventory",
+    "final audit",
+    "pseudonymous split manifests",
+    "checkpoint SHA-256 inventory"
+  ],
+  "historical_records": "Frozen protocol, stage states, numerical results and audited post-analysis artifacts are unchanged.",
+  "changes": [
+    "README access status, actual CLI interfaces and current table/figure mapping",
+    "four omitted authored source dependencies added",
+    "trajectory script directory made relative",
+    "artifact-only verifier and safe execution-layout exporter added",
+    "stale current-branch ZIP removed; cleaned archive supplied separately"
+  ],
+  "checkpoint_validation_private_local_only": {
+    "count": 48,
+    "individual_sha256_mismatches": 0,
+    "archive_entry_sha256_mismatches": 0,
+    "metadata_credential_or_email_flags": 0,
+    "archive_sha256": "6fd81477c8d7ab09feca4ef96093ffd6ca2b6b1e6d2947f10b38cd89bc6b2740",
+    "archive_md5": "e3891f9554f8adbc5fa38248bc52a7c4",
+    "uploaded_draft_size_and_md5_match_local": true
+  },
+  "validation_scope": "Artifact integrity and syntax/layout checks only; no new experimental reproduction."
+}

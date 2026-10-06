@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 
 sys.stdout.reconfigure(encoding="utf-8")
-BASE = r"C:\Users\1\Desktop\返修提交终稿_20260915"
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------------- data loading
 def load():

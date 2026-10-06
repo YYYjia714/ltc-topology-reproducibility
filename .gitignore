@@ -6,3 +6,17 @@ zenodo_token.txt*
 zenodo_meta.json
 zenodo_record_id.txt
 zenodo_upload.sh
+
+# Local-only publishing and runtime files
+.git-credentials
+.env
+.env.*
+*token*.txt*
+*secret*.txt*
+*credentials*.json
+diag_upload_semantics.py
+upload_*.py
+__pycache__/
+*.pyc
+execution_workspace/
+ltc_topology_reproducibility_public_20261006.zip
